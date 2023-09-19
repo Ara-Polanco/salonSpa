@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bienvenida {
+    
+    &__heading {
+        @include m.headingCursiva;
+        margin-bottom: v.$separacion;
+    }
+
+    &__texto {
+        font-size: 2rem;
+        color: v.$gris;
+        max-width: 40rem;
+        margin: 0 auto;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+}
